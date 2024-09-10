@@ -17,26 +17,348 @@
     <div class = "HeaderLinks">
         <a id = "HeaderLink">Ученикам</a>
         <a id = "HeaderLink">Преподавателям</a>
-        <a id = "HeaderLink">Администрирование</a>
+        <a id = "HeaderLink">Администратор</a>
     </div>
 
     <main>
         <div class = "RightNavigationPanel">
             <p class = "Class">Класс</p>
-            <button class = "TabLink" onclick = "openCity(event, 'London')">1</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Paris')">2</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Tokyo')">3</button>
-            <button class = "TabLink" onclick = "openCity(event, 'London')">4</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Paris')">5</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Tokyo')">6</button>
-            <button class = "TabLink" onclick = "openCity(event, 'London')">7</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Paris')">8</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Tokyo')">9</button>
-            <button class = "TabLink" onclick = "openCity(event, 'London')">10</button>
-            <button class = "TabLink" onclick = "openCity(event, 'Paris')">11</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class1')">1</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class2')">2</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class3')">3</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class4')">4</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class5')">5</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class6')">6</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class7')">7</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class8')">8</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class9')">9</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class10')">10</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class11')">11</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Alarms')">Звонки</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Changes')">Изменения</button>
         </div>
 
-        <div class = "Table"></div>
+        <div class = "MainContent">
+            <div id = "Class1" class = "TabContent">
+                <div id = "Class1A" class = "ClassesTabels">
+                    <p id = "ClassesTabelsTitle">1А класс</p>
+                    <table>
+                        <tr>
+                            <th>№</th>
+                            <th>Понедельник</th>
+                            <th>Вторник</th>
+                            <th>Среда</th>
+                            <th>Четверг</th>
+                            <th>Пятница</th>
+                            <th>Суббота</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id = "Class1B" class = "ClassesTabels">
+                    <p id = "ClassesTabelsTitle">1Б класс</p>
+                    <table>
+                        <tr>
+                            <th>№</th>
+                            <th>Понедельник</th>
+                            <th>Вторник</th>
+                            <th>Среда</th>
+                            <th>Четверг</th>
+                            <th>Пятница</th>
+                            <th>Суббота</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                    </table>        
+                </div>
+
+                <div id = "Class1V" class = "ClassesTabels">
+                    <p id = "ClassesTabelsTitle">1В класс</p>
+                    <table>
+                        <tr>
+                            <th>№</th>
+                            <th>Понедельник</th>
+                            <th>Вторник</th>
+                            <th>Среда</th>
+                            <th>Четверг</th>
+                            <th>Пятница</th>
+                            <th>Суббота</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                            <td>Математика</td>
+                            <td>Физкультура</td>
+                            <td>-</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id = "Class2" class = "TabContent">
+                <p>2</p>
+            </div>
+            <div id = "Class3" class = "TabContent">
+                <p>3</p>
+            </div>
+            <div id = "Class4" class = "TabContent">
+                <p>4</p>
+            </div>
+            <div id = "Class5" class = "TabContent">
+                <p>5</p>
+            </div>
+            <div id = "Class6" class = "TabContent">
+                <p>6</p>
+            </div>
+            <div id = "Class7" class = "TabContent">
+                <p>7</p>
+            </div>
+            <div id = "Class8" class = "TabContent">
+                <p>8</p>
+            </div>
+            <div id = "Class9" class = "TabContent">
+                <p>9</p>
+            </div>
+            <div id = "Class10" class = "TabContent">
+                <p>10</p>
+            </div>
+            <div id = "Class11" class = "TabContent">
+                <p>11</p>
+            </div>
+            <div id = "Alarms" class = "TabContent">
+                <div id = "DailyAlarms" class = "ClassesTabels">
+                    <p id = "DailyAlarmsTitle">Расписание звонков во 2-11-х классах</p>
+                    <table>
+                        <tr>
+                            <th>Урок</th>
+                            <th>Начало</th>
+                            <th>Окончание</th>
+                            <th>Продолжительность перемен</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>8:30</td>
+                            <td>9:10</td>
+                            <td>30 минут</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>9:40</td>
+                            <td>10:20</td>
+                            <td>10 минут</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>10:30</td>
+                            <td>11:10</td>
+                            <td>10 минут</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>11:20</td>
+                            <td>12:00</td>
+                            <td>30 минут (динамическая пауза)</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Русский</td>
+                            <td>Чтение</td>
+                            <td>Музыка</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div id = "Changes" class = "TabContent">
+                <p>Изменения в расписании</p>
+            </div>
+        </div>
+
+        <div class = "LeftTableBlock">
+            <p id = "ClassesTabelsTitle">Расписание звонков</p>
+            <table id = "LeftTable">
+                <tr>
+                    <th>Урок</th>
+                    <th>Длительность</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>8:30 - 9:10</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>9:40 - 10:20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>10:30 - 11:10</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>11:20 - 12:00</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>8:30 - 9:10</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>8:30 - 9:10</td>
+                </tr>
+                <tr>
+                    <td>7</d>
+                    <td>8:30 - 9:10</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>8:30 - 9:10</td>
+                </tr>
+            </table>
+        </div>
     </main>
+
+    <script src = "Scripts.js"></script>
 </body>
 </html>
