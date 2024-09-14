@@ -7,6 +7,8 @@
     background-color: whitesmoke;
 }
 
+/* Header */
+
 header {
     position: relative;
     text-align: center;
@@ -45,29 +47,42 @@ h2 {
     padding: 5px;
 }
 
+/* Main */
+
 main {
     position: relative;
     display: flex;
 }
 
+/* Right */
+
 .RightNavigationPanel {
     position: relative;
     margin-left: 30px;
-    display: inline-block;
-    width: 120px;
-    height: 725px;
+    float: left;
+    width: 190px;
+    height: 770px;
     text-align: center;
-    font-size: 22px;
     outline-style: solid;
     outline-width: 3px;
     outline-color: black;
     border-radius: 2px 2px 2px 2px;
 }
+.ClassTitle {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+    height: 30px;
+    width: 190px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
 .Button {
     margin-top: 1px;
     margin-bottom: 2px;
     position: relative;
-    width: 110px;
+    width: 120px;
     height: 50px;
     overflow: hidden;
     border: 1px solid black;
@@ -108,24 +123,28 @@ main {
         opacity: 0;
     }
 }
+
+/* Middle */
+
 .MainContent {
     position: relative;
-    display: inline-block;
+    display: flex;
+    flex-grow: 1;
     margin-left: 10px;
     margin-right: 10px;
-    width: 1520px;
-    height: 725px;
+    height: 770px;
     outline-style: solid;
     outline-width: 3px;
     outline-color: black;
     border-radius: 2px 2px 2px 2px;
+    overflow-y: scroll;
+    justify-content: center;
 }
 .TabContent {
     display: none;
     animation: fadeEffect 1s;
     text-align: center;
 }
-/* Изменения открываются по умолчанию */
 #Changes {
     display: block;
 }
@@ -142,27 +161,7 @@ main {
 #ClassesTabelsTitle {
     text-align: center;
     margin-bottom: 10px;
-}
-
-.LeftTableBlock {
-    position: relative;
-    display: inline-block;
-    width: 190px;
-    height: 725px;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
-    border-radius: 2px 2px 2px 2px;
-}
-
-#LeftTable {
-    position: relative;
-    width: 190px;
-    text-align: center;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    border-radius: 2px 2px 2px 2px;
+    font-size: 20px;
 }
 
 table {
@@ -184,4 +183,28 @@ th {
     outline-style: solid;
     outline-width: 2px;
     outline-color: black;
+}
+
+/* Left */
+
+.LeftTableBlock {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    width: 190px;
+    height: 770px;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+}
+
+#LeftTable {
+    position: relative;
+    width: 190px;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
 }
