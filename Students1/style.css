@@ -1,0 +1,216 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    text-align: center;
+    height: 55px;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #3477b9;
+    color: whitesmoke;
+}
+
+h2 {
+    position: relative;
+    top: 10px;
+    background-color: #3477b9;
+    color: whitesmoke;
+    font-size: 25px;
+}
+
+.HeaderLinks {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 18px;  
+}
+
+#HeaderLink {
+    position: relative;
+    margin-right: 7px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px;
+}
+
+/* Main */
+
+main {
+    position: relative;
+    display: flex;
+}
+
+/* Right */
+
+.RightNavigationPanel {
+    position: relative;
+    display: flex;
+    margin-left: 30px;
+    float: left;
+    width: 190px;
+    height: 770px;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ClassTitle {
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+    height: 30px;
+    width: 190px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.Button {
+    position: relative;
+    margin-top: 1px;
+    margin-bottom: 2px;
+    width: 115px;
+    height: 45px;
+    align-self: center;
+
+    overflow: hidden;
+    background-color: #3477b9;
+    color: whitesmoke;
+    font-size: 19px;
+    text-decoration: none;
+    opacity: 0.98;
+    box-shadow: 0px 2px 2px #888;
+    transition: 0.3s;
+    line-height: 2;
+
+    border: 2px solid #05386B;
+    border-radius: 4px 4px 4px 4px;
+}
+.Button:hover {
+    background-color: #3f33ac;
+    border: 2px solid #3477b9;
+    cursor: pointer;
+    box-shadow: 0px 5px 2px #888;
+}
+.Button:active {
+    color: #ffffff;
+    transition: 0.1s;
+    background-color: #383269;
+    border: 2px solid #0d4c4e;
+}
+.Pulse {
+    background-color: #3477b9;
+    border-radius: 50%;
+    animation: pulse 0.6s ease-out;
+    transform: scale(0);
+    position: absolute;
+}
+@keyframes pulse {
+    to {
+        transform: scale(2);
+        background-color: #ffffff;
+        opacity: 0;
+    }
+}
+
+/* Middle */
+
+.MainContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 770px;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+    overflow-y: scroll;
+
+}
+.TabContent {
+    display: none;
+    animation: fadeEffect 1s;
+    text-align: center;
+}
+#Changes {
+    display: block;
+}
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.ClassesTabels {
+    margin-top: 10px;
+    font-size: 18px;
+}
+#ClassesTabelsTitle {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+table {
+    width: 750px;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+}
+td {
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+}
+th {
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+}
+
+/* Left */
+
+.LeftTableBlock {
+    position: relative;
+    float: right;
+    margin-right: 30px;
+    width: 190px;
+    height: 770px;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+}
+
+#LeftTable {
+    position: relative;
+    width: 190px;
+    text-align: center;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: black;
+    border-radius: 2px 2px 2px 2px;
+}

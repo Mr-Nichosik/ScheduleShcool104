@@ -1,0 +1,284 @@
+
+@media only screen and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	h2 {
+        font-size: 14px;
+    }
+
+    header {
+        height: 38px;
+    }
+
+    .HeaderLinks {
+        font-size: 9px;  
+    }
+
+    .ClassTitle {
+        height: 20px;
+        width: 50px;
+        font-size: 13px;
+    }
+
+    .RightNavigationPanel {
+        margin-left: 5px;
+        width: 50px;
+        height: 390px;
+    }
+
+    .Button {
+        width: 45px;
+        height: 25px;
+        font-size: 8px;
+    }
+
+    .Button:hover {
+        box-shadow: 0px 3px 2px #888;
+    }
+
+    .MainContent {
+        height: 390px;
+    }
+
+    #ClassesTabelsTitle {
+        font-size: 13px;
+    }
+
+    .ClassesTabels {
+        font-size: 6.5px;
+    }
+
+    table {
+        width: 225px;
+        outline-width: 1px;
+    }
+
+    th {
+        height: 12px;
+    }
+    td {
+        height: 12px;
+    }
+
+    .LeftTableBlock {
+        display: none;
+    }
+}
+
+@media only screen and (orientation: portrait) and (width > 319px) and (height > 567px) and (-webkit-min-device-pixel-ratio: 2) {
+	h2 {
+        font-size: 16px;
+    }
+
+    header {
+        height: 55px;
+    }
+
+    .HeaderLinks {
+        font-size: 10px;  
+    }
+
+    .ClassTitle {
+        height: 25px;
+        width: 60px;
+        font-size: 16px;
+    }
+
+    .RightNavigationPanel {
+        width: 60px;
+        height: 450px;
+    }
+
+    .Button {
+        width: 55px;
+        height: 29px;
+        font-size: 10px;
+    }
+
+    .MainContent {
+        height: 450px;
+    }
+
+    #ClassesTabelsTitle {
+        font-size: 12px;
+    }
+
+    .ClassesTabels {
+        font-size: 6.5px;
+    }
+
+    table {
+        width: 225px;
+        outline-width: 1px;
+    }
+
+    th {
+        height: 12px;
+    }
+    td {
+        height: 12px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (width > 374px) and (height > 666px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .HeaderLinks {
+        font-size: 12px;  
+    }
+
+    .RightNavigationPanel {
+        height: 550px;
+    }
+
+    .Button {
+        height: 35px;
+    }
+
+    .MainContent {
+        height: 550px;
+    }
+
+    .ClassesTabels {
+        font-size: 8px;
+    }
+
+    table {
+        width: 270px;
+        outline-width: 1px;
+    }
+
+    th {
+        height: 12px;
+    }
+    td {
+        height: 12px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (width > 359px) and (height > 739px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    header {
+        height: 60px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .HeaderLinks {
+        font-size: 12px;  
+    }
+
+    .RightNavigationPanel {
+        height: 620px;
+    }
+
+    .Button {
+        height: 39px;
+    }
+
+    .MainContent {
+        height: 620px;
+    }
+
+    .ClassesTabels {
+        font-size: 8px;
+    }
+
+    table {
+        width: 270px;
+        outline-width: 1px;
+    }
+
+    th {
+        height: 12px;
+    }
+    td {
+        height: 12px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (width > 374px) and (height > 811px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .HeaderLinks {
+        font-size: 12px;  
+    }
+
+    .RightNavigationPanel {
+        height: 680px;
+    }
+
+    .Button {
+        height: 40px;
+    }
+
+    .MainContent {
+        height: 680px;
+    }
+
+    .ClassesTabels {
+        font-size: 8px;
+    }
+
+    table {
+        width: 270px;
+        outline-width: 1px;
+    }
+
+    th {
+        height: 12px;
+    }
+    td {
+        height: 12px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (width > 411px) and (height > 914px) and (-webkit-min-device-pixel-ratio: 2) {
+
+    .HeaderLinks {
+        font-size: 13px;  
+    }
+
+    .ClassTitle {
+        height: 25px;
+        width: 70px;
+        font-size: 16px;
+    }
+
+    .RightNavigationPanel {
+        height: 700px;
+        width: 70px;
+    }
+
+    .Button {
+        height: 45px;
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .MainContent {
+        height: 700px;
+    }
+
+    .ClassesTabels {
+        font-size: 9px;
+    }
+
+    #ClassesTabelsTitle {
+        font-size: 13px;
+    }
+
+    .ClassesTabels {
+        font-size: 9px;
+    }
+
+    table {
+        width: 300px;
+        outline-width: 1px;
+    }
+
+    th {
+        height: 12px;
+    }
+    td {
+        height: 12px;
+    }
+}
