@@ -1,16 +1,8 @@
 
 // Tabs
 function OpenClassTable(evt, ClassN) {
-    var i, tabcontent;
-
-    // Get all elements with class "TabContent" and hide them
-    tabcontent = document.getElementsByClassName("TabContent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(ClassN).style.display = "block";
+  const element = document.getElementById(ClassN);
+  element?.current.scrollIntoView()
 }
 
 // Button effect
@@ -44,8 +36,23 @@ function AddElement(e)
   {
     this.remove()
   }
-
-    // console.log(AddDiv);
-    // console.log(MValue);
-    // console.log(Rect)
 }
+
+// Modal window
+
+const ClassBtns = document.getElementsByClassName("ClassButton");
+const Overlay = document.getElementById("Overlay");
+const ModalWindow = document.getElementById("ClassModal");
+
+ForEach.call(ClassBtns, function (b)
+{
+  b.addEventListener("click", () => {
+    ModalWindow.style.display = "block";
+    Overlay.style.display = "block";
+  });
+});
+
+Overlay.addEventListener("click", () => {
+  ModalWindow.style.display = "none";
+  Overlay.style.display = "none";
+});

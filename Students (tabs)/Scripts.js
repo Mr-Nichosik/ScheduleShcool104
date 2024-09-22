@@ -1,8 +1,16 @@
 
 // Tabs
 function OpenClassTable(evt, ClassN) {
-  const element = document.getElementById(ClassN);
-  element?.current.scrollIntoView()
+    var i, tabcontent;
+
+    // Get all elements with class "TabContent" and hide them
+    tabcontent = document.getElementsByClassName("TabContent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(ClassN).style.display = "block";
 }
 
 // Button effect

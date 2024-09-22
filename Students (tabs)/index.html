@@ -24,23 +24,24 @@
     <main>
         <div class = "RightNavigationPanel">
             <p class = "ClassTitle">Класс</p>
-            <a class = "Button" href = "#Class1">1</a>
-            <a class = "Button" href = "#Class2">2</a>
-            <a class = "Button" href = "#Class3">3</a>
-            <a class = "Button" href = "#Class4">4</a>
-            <a class = "Button" href = "#Class5">5</a>
-            <a class = "Button" href = "#Class6">6</a>
-            <a class = "Button" href = "#Class7">7</>
-            <a class = "Button" href = "#Class8">8</a>
-            <a class = "Button" href = "#Class9">9</a>
-            <a class = "Button" href = "#Class10">10</a>
-            <a class = "Button" href = "#Class11">11</a>
-            <a class = "Button" href = "#Alarms">Звонки</a>
-            <a class = "Button" href = "#Changes">Изменения</a>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class1')">1</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class2')">2</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class3')">3</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class4')">4</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class5')">5</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class6')">6</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class7')">7</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class8')">8</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class9')">9</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class10')">10</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Class11')">11</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Alarms')">Звонки</button>
+            <button class = "Button" onclick = "OpenClassTable(event, 'Changes')">Изменения</button>
         </div>
 
         <div class = "MainContent">
-                <div id = "Class1" class = "ClassesTabels">
+            <div id = "Class1" class = "TabContent">
+                <div id = "Class1A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">1А класс</p>
                     <table>
                         <tr>
@@ -219,8 +220,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class2" class = "ClassesTabels">
+            <div id = "Class2" class = "TabContent">
+                <div id = "Class2A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">2А класс</p>
                     <table>
                         <tr>
@@ -427,8 +430,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class3" class = "ClassesTabels">
+            <div id = "Class3" class = "TabContent">
+                <div id = "Class3A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">3А класс</p>
                     <table>
                         <tr>
@@ -635,8 +640,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class4" class = "ClassesTabels">
+            <div id = "Class4" class = "TabContent">
+                <div id = "Class4A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">4А класс</p>
                     <table>
                         <tr>
@@ -843,8 +850,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class5" class = "ClassesTabels">
+            <div id = "Class5" class = "TabContent">
+                <div id = "Class5A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">5А класс</p>
                     <table>
                         <tr>
@@ -1051,8 +1060,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class6" class = "ClassesTabels">
+            <div id = "Class6" class = "TabContent">
+                <div id = "Class6A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">6А класс</p>
                     <table>
                         <tr>
@@ -1286,8 +1297,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class7" class = "ClassesTabels">
+            <div id = "Class7" class = "TabContent">
+                <div id = "Class7A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">7А класс</p>
                     <table>
                         <tr>
@@ -1547,8 +1560,10 @@
                         </tr>
                     </table>
                 </div>
-  
-                <div id = "Class8" class = "ClassesTabels">
+            </div>
+
+            <div id = "Class8" class = "TabContent">
+                <div id = "Class8A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">8А класс</p>
                     <table>
                         <tr>
@@ -1808,8 +1823,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class9" class = "ClassesTabels">
+            <div id = "Class9" class = "TabContent">
+                <div id = "Class9A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">9А класс</p>
                     <table>
                         <tr>
@@ -2069,8 +2086,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class10" class = "ClassesTabels">
+            <div id = "Class10" class = "TabContent">
+                <div id = "Class10A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">10А класс</p>
                     <table>
                         <tr>
@@ -2156,8 +2175,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Class11" class = "ClassesTabels">
+            <div id = "Class11" class = "TabContent">
+                <div id = "Class11A" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">11А класс</p>
                     <table>
                         <tr>
@@ -2243,8 +2264,10 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
-                <div id = "Alarms" class = "ClassesTabels">
+            <div id = "Alarms" class = "TabContent">
+                <div id = "DailyAlarms" class = "ClassesTabels">
                     <p id = "ClassesTabelsTitle">Расписание звонков во 2-11-х классах</p>
                     <table>
                         <tr>
@@ -2363,7 +2386,9 @@
                         </tr>
                     </table>
                 </div>
+            </div>
 
+            <div id = "Changes" class = "TabContent">
                 <p>Изменения в расписании</p>
             </div>
         </div>

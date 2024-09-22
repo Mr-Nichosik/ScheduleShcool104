@@ -4,7 +4,8 @@
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
-    background-color: whitesmoke;
+
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -13,20 +14,32 @@ header {
     position: relative;
     text-align: center;
     height: 55px;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
-    border-radius: 0px 0px 5px 5px;
     background-color: #3477b9;
     color: whitesmoke;
+    background-image: linear-gradient(#3477b9, #2AA5A0);
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 8px;
+
+    border: 3px solid transparent;
+    border-radius: 1em;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
 }
 
 h2 {
     position: relative;
     top: 10px;
-    background-color: #3477b9;
+    background-color: rgba(0, 0, 0, 0);
     color: whitesmoke;
     font-size: 25px;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    top: 50%;
+    left: 50%;
+	-webkit-background-clip: text;
+	background-clip: text;
+    color: black;
 }
 
 .HeaderLinks {
@@ -40,11 +53,23 @@ h2 {
 #HeaderLink {
     position: relative;
     margin-right: 7px;
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: black;
-    border-radius: 4px 4px 4px 4px;
+    border: 3px solid transparent;
+    border-radius: 1em;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
     padding: 5px;
+    transition: 0.3s;
+}
+#HeaderLink:hover {
+    color: #ffffff;
+    transition: 0.2s;
+    background-color: #a3a3a3;
+    cursor: pointer;
+}
+#HeaderLink:active {
+    color: #ffffff;
+    transition: 0.1s;
+    background-color: #5a5959;
 }
 
 /* Main */
@@ -64,10 +89,10 @@ main {
     width: 190px;
     height: 770px;
     text-align: center;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
-    border-radius: 2px 2px 2px 2px;
+    border: 3px solid transparent;
+    border-radius: 0.4em;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -82,23 +107,31 @@ main {
     font-size: 20px;
 }
 .Button {
+    position: relative;
     margin-top: 1px;
     margin-bottom: 2px;
-    position: relative;
-    width: 120px;
-    height: 50px;
+    width: 115px;
+    height: 45px;
+    align-self: center;
     overflow: hidden;
-    border: 1px solid black;
-    background-color: #3477b9;
-    color: whitesmoke;
-    font-size: 19px;
 
+    background: linear-gradient(rgb(33, 109, 79),rgb(42, 218, 204));
+
+    font-size: 19px;
+    text-decoration: none;
     opacity: 0.98;
-    border: 2px solid #05386B;
-    border-radius: 3px 3px 3px 3px;
     box-shadow: 0px 2px 2px #888;
     transition: 0.3s;
-    align-self: center;
+
+    border: 2px solid #05386B;
+    border-radius: 4px 4px 4px 4px;
+}
+.ButtonText {
+    position: relative;
+    color: rgb(248, 248, 248);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .Button:hover {
     background-color: #3f33ac;
@@ -132,21 +165,25 @@ main {
 .MainContent {
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
     margin-left: 10px;
     margin-right: 10px;
     height: 770px;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
-    border-radius: 2px 2px 2px 2px;
+    border: 3px solid transparent;
+    border-radius: 0.3em;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
     overflow-y: scroll;
-    justify-content: center;
+
 }
 .TabContent {
-    display: none;
-    animation: fadeEffect 1s;
-    text-align: center;
+    border: 3px solid transparent;
+    border-radius: 1em;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+    margin-top: 20px;
 }
 #Changes {
     display: block;
@@ -156,9 +193,7 @@ main {
     to {opacity: 1;}
 }
 .ClassesTabels {
-    position: relative;
-    display: inline-block;
-    margin: 10px;
+    margin-top: 10px;
     font-size: 18px;
 }
 #ClassesTabelsTitle {
@@ -187,6 +222,18 @@ th {
     outline-width: 2px;
     outline-color: black;
 }
+.ClassButton {
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.ClassButton:hover {
+    color: #0464c5;
+}
+.ClassButton:active {
+    color: #758494;
+    transition: 0.1s;
+}
 
 /* Left */
 
@@ -196,10 +243,10 @@ th {
     margin-right: 30px;
     width: 190px;
     height: 770px;
-    outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
-    border-radius: 2px 2px 2px 2px;
+    border: 3px solid transparent;
+    border-radius: 0.4em;
+    background: linear-gradient(#eee, #eee 0) padding-box,
+      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
 }
 
 #LeftTable {
@@ -210,4 +257,31 @@ th {
     outline-width: 2px;
     outline-color: black;
     border-radius: 2px 2px 2px 2px;
+}
+
+/* Modal */
+
+#ClassModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+}
+#Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    display: none;
 }
