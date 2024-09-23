@@ -24,7 +24,7 @@ header {
     border: 3px solid transparent;
     border-radius: 1em;
     background: linear-gradient(#eee, #eee 0) padding-box,
-      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+      linear-gradient(to top, #b36dee, #6734ed) border-box;
 }
 
 h2 {
@@ -34,11 +34,8 @@ h2 {
     color: whitesmoke;
     font-size: 25px;
     transform: translate(-50%, -50%);
-    color: transparent;
     top: 50%;
     left: 50%;
-	-webkit-background-clip: text;
-	background-clip: text;
     color: black;
 }
 
@@ -56,7 +53,7 @@ h2 {
     border: 3px solid transparent;
     border-radius: 1em;
     background: linear-gradient(#eee, #eee 0) padding-box,
-      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+      linear-gradient(to top, #b36dee, #6734ed) border-box;
     padding: 5px;
     transition: 0.3s;
 }
@@ -92,14 +89,14 @@ main {
     border: 3px solid transparent;
     border-radius: 0.4em;
     background: linear-gradient(#eee, #eee 0) padding-box,
-      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+      linear-gradient(to top, #b36dee, #6734ed) border-box;
     flex-direction: column;
     justify-content: space-between;
 }
 .ClassTitle {
     outline-style: solid;
-    outline-width: 3px;
-    outline-color: black;
+    outline-width: 2px;
+    outline-color: #6734ed;
     border-radius: 2px 2px 2px 2px;
     height: 30px;
     width: 190px;
@@ -115,7 +112,7 @@ main {
     align-self: center;
     overflow: hidden;
 
-    background: linear-gradient(rgb(33, 109, 79),rgb(42, 218, 204));
+    background: linear-gradient(#47249e, #b36dee);
 
     font-size: 19px;
     text-decoration: none;
@@ -174,7 +171,7 @@ main {
     border: 3px solid transparent;
     border-radius: 0.3em;
     background: linear-gradient(#eee, #eee 0) padding-box,
-      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+      linear-gradient(to top, #b36dee, #6734ed) border-box;
     overflow-y: scroll;
 
 }
@@ -182,7 +179,7 @@ main {
     border: 3px solid transparent;
     border-radius: 1em;
     background: linear-gradient(#eee, #eee 0) padding-box,
-      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+      linear-gradient(to top, #b36dee, #6734ed) border-box;
     margin-top: 20px;
 }
 #Changes {
@@ -246,7 +243,7 @@ th {
     border: 3px solid transparent;
     border-radius: 0.4em;
     background: linear-gradient(#eee, #eee 0) padding-box,
-      linear-gradient(to top, rgb(42, 218, 204), rgb(23, 30, 36)) border-box;
+      linear-gradient(to top, #b36dee, #6734ed) border-box;
 }
 
 #LeftTable {
